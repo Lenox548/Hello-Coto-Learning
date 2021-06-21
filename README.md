@@ -1,6 +1,6 @@
 # Hello Cotto Learning
 
-Hello Cotto Learning es una aplicación codificada en C#, utilizando el framework Xamarin, para el aprendizaje del inglés, destinada para un público joven, y en términos generales novato en cuanto a conocimiento del inglés se refiere.
+Hello Cotto Learning es una aplicación codificada en C# utilizando el framework Xamarin, para el aprendizaje del inglés. Hello Cotto Learning está destinada para un público joven, y en términos generales novato en cuanto a conocimiento del inglés se refiere.
 
 ## Screenshots
 
