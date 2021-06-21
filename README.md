@@ -4,8 +4,6 @@ Hello Cotto Learning es una aplicación codificada en C#, utilizando el framewor
 
 ## Screenshots
 
-### Android
-
 #### Introducción y Menú Principal
 <kbd><img width="250" src="screenshots/Screenshot_1624306795.png" /></kbd>
 <kbd><img width="250" src="screenshots/Screenshot_1624306797.png" /></kbd>
