@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hello_Cotto_Learning.Views.Ayuda"
+             xmlns:vm="clr-namespace:Hello_Cotto_Learning.ViewModels"
+             Title="{Binding Title}"
+             BackgroundColor="{DynamicResource Background}">
+
+    <ContentPage.BindingContext>
+    <vm:AyudaViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="「Texto Explicativo」"
+                FontSize="17"
+                TextColor="{DynamicResource SecondColor}"
+                Margin="20,20,20,0"
+                HorizontalTextAlignment = "Center"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+            <Label Text="¿Te has encontrado con algun problema?"
+                FontSize="17"
+                TextColor="{DynamicResource SecondColor}"
+                Margin="20,20,20,0"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            <Editor
+                x:Name="CajaReporte"
+                Placeholder="Cuentanos al respecto"
+                PlaceholderColor="{DynamicResource PlaceholderColor}"
+                TextColor="{DynamicResource SecondColor}"
+                Text=""
+                AutoSize="TextChanges"
+                Margin="20,0,20,0"/>
+            <Button Margin="20,0,20,0" Text="Enviar Reporte" BackgroundColor="#f0bc2a" Clicked="ReporteEnviado"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

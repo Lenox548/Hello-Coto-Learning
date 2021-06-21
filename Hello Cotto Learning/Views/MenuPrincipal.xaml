@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hello_Cotto_Learning.Views.MenuPrincipal"
+             xmlns:vm="clr-namespace:Hello_Cotto_Learning.ViewModels"
+             Title="{Binding Title}"
+             BackgroundColor="{DynamicResource Background}">
+    
+
+    <ContentPage.BindingContext>
+        <vm:MenuPrincipalViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text=""/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

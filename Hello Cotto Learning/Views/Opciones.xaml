@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hello_Cotto_Learning.Views.Opciones"
+             xmlns:vm="clr-namespace:Hello_Cotto_Learning.ViewModels"
+             Title="{Binding Title}"
+             BackgroundColor="{DynamicResource Background}">
+
+    <ContentPage.BindingContext>
+        <vm:OpcionesViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <TableView Intent="Settings" HasUnevenRows="True">
+            <TableSection>
+                <ViewCell>
+                    <StackLayout>
+                        <Grid VerticalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="44"/>
+                            </Grid.RowDefinitions>
+                            <Label Text="Música"
+                                   TextColor="{DynamicResource PlaceholderColor}"
+                                   Margin="17,0,0,0"
+                                   VerticalTextAlignment="Center"
+                                   Grid.Row="0"
+                                   Grid.Column="0"/>
+                            <Switch x:Name="Musica"
+                                    Toggled="Musica_On"
+                                    IsToggled="True"
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    VerticalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </ViewCell>
+                <TextCell Text="Volumen"
+                          TextColor="{DynamicResource PlaceholderColor}"
+                          Height="60"/>
+            </TableSection>
+            <TableSection Title="Tema">
+                <ViewCell>
+                    <StackLayout>
+                        <Grid VerticalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="44"/>
+                            </Grid.RowDefinitions>
+                            <Label Text="Claro"
+                                   TextColor="{DynamicResource PlaceholderColor}"
+                                   Margin="17,0,0,0"
+                                   VerticalTextAlignment="Center"
+                                   Grid.Row="0"
+                                   Grid.Column="0"/>
+                            <Switch x:Name="TemaClaro"
+                                    Toggled="TemaClaro_On"
+                                    IsToggled="True"
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    VerticalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </ViewCell>
+                <ViewCell>
+                    <StackLayout>
+                        <Grid VerticalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="44"/>
+                            </Grid.RowDefinitions>
+                            <Label Text="Oscuro"
+                                   TextColor="{DynamicResource PlaceholderColor}"
+                                   Margin="17,0,0,0"
+                                   VerticalTextAlignment="Center"
+                                   Grid.Row="0"
+                                   Grid.Column="0"/>
+                            <Switch x:Name="TemaOscuro"
+                                    Toggled="TemaOscuro_On"
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    VerticalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </ViewCell>
+            </TableSection>
+        </TableView>
+        <Slider MaximumTrackColor="{DynamicResource SecondColor}"
+                MinimumTrackColor="#fa407e"
+                ThumbColor="#fa407e"
+                Minimum="0"
+                Maximum="100"
+                Value="100"
+                TranslationY="-500"/>
+
+    </StackLayout>
+</ContentPage>
